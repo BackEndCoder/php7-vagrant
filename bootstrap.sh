@@ -39,7 +39,7 @@ python2.7 get-pip.py
 pip install awscli
 
 # Install NodeJS
-curl -sL https://deb.nodesource.com/setup_8.x | -
+curl -sL https://deb.nodesource.com/setup_8.x | bash -
 apt-get install -y nodejs
 apt-get install -y build-essential
 
