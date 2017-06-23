@@ -38,10 +38,13 @@ curl -O https://bootstrap.pypa.io/get-pip.py
 python2.7 get-pip.py
 pip install awscli
 
+# Install NodeJS
+curl -sL https://deb.nodesource.com/setup_8.x | -
+apt-get install -y nodejs
 
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-mv /home/vagrant/nginx.conf /etc/nginx/sites-available/gold
-ln -s /etc/nginx/sites-available/gold /etc/nginx/sites-enabled/gold
+mv /home/vagrant/nginx.conf /etc/nginx/sites-available/laraveldeveloper.uk
+ln -s /etc/nginx/sites-available/gold /etc/nginx/sites-enabled/laraveldeveloper.uk
 #
 systemctl restart nginx.service
