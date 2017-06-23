@@ -41,6 +41,7 @@ pip install awscli
 # Install NodeJS
 curl -sL https://deb.nodesource.com/setup_8.x | -
 apt-get install -y nodejs
+apt-get install -y build-essential
 
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
